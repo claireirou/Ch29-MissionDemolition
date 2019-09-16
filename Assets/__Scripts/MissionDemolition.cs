@@ -75,7 +75,7 @@ public class MissionDemolition : MonoBehaviour {
     void UpdateGUI()
     {
         // Show the data in the GUITexts
-        uitLevel.text = "Level: " + (level + 1) + " of" + levelMax;
+        uitLevel.text = "Level: " + (level + 1) + " of " + levelMax;
         uitShots.text = "Shots Taken: " + shotsTaken;
     }
 
@@ -91,7 +91,7 @@ public class MissionDemolition : MonoBehaviour {
             // Zoom out
             SwitchView("Show Both");
             // Start next level in 2 seconds
-            Invoke("Next Level", 2f);
+            Invoke("NextLevel", 2f);
         }
 
     }
